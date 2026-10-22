@@ -647,26 +647,6 @@ a:focus-visible,
   aspect-ratio: 16 / 7;
 }
 
-/* Card with the handwriting robot drawing beside the text */
-.card-figure {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 140px;
-  grid-template-areas: "head img" "par par";
-  gap: 18px;
-}
-.card-figure .card-head { grid-area: head; }
-.card-figure .par { grid-area: par; }
-.card-drawing {
-  grid-area: img;
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  justify-self: end;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--line);
-  background: #FFFFFF;
-}
-
 /* ---------- Person ---------- */
 
 .split {
@@ -1063,11 +1043,6 @@ a:focus-visible,
     padding: 6px 0 6px;
   }
   .par > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
-  .card-figure {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "head" "img" "par";
-  }
-  .card-drawing { justify-self: start; width: 120px; height: 120px; }
   .cta .btn { flex: 1 1 auto; }
   .contact-link { font-size: 16px; padding: 0 18px; }
 }

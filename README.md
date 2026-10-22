@@ -18,7 +18,6 @@ Images live in `assets/images/`.
 | File | Used for | Suggested size |
 | --- | --- | --- |
 | `glider.jpg` | Underwater glider card (see the comment above that card in `index.html`) | 1200×750 |
-| `handwriting-robot.jpg` | Handwriting robots card (already in place) | square |
 | `og-image.jpg` | Link preview on LinkedIn, WhatsApp etc. (already in place) | exactly 1200×630 |
 
 Keep each image under about 300 KB so the page stays fast (https://squoosh.app is free and works well).
