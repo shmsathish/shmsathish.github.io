@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shmsathish.site/sitemap.xml
