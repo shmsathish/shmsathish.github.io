@@ -854,6 +854,55 @@ a:focus-visible,
   margin: -12px 0;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* ---------- Privacy policy page ---------- */
+
+.back-link {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.back-link:hover { color: var(--accent); }
+
+.legal { max-width: calc(68ch + 2 * var(--gutter)); }
+.legal h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(40px, 4.6vw, 68px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+.legal-updated {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+.legal h2 {
+  margin-top: 48px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+}
+.legal p,
+.legal ul { margin-top: 12px; }
+.legal-updated + p { margin-top: 32px; }
+.legal ul { padding-left: 1.2em; list-style: disc; }
+.legal li + li { margin-top: 4px; }
+.legal a { color: var(--accent-deep); overflow-wrap: anywhere; }
+
 /* ---------- Motion (only when JS runs and the visitor allows motion) ---------- */
 
 @media (prefers-reduced-motion: no-preference) {
